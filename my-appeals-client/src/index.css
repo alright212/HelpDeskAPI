@@ -1,0 +1,75 @@
+/* General App styles */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f8;
+  color: #333;
+  padding: 20px;
+}
+
+/* Styling for the list container */
+.appeals-list {
+  list-style: none;  /* Remove default list styling */
+  padding: 0;
+}
+
+/* Styling for individual appeal items */
+.appeal {
+  margin: 10px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-left: 4px solid #0052cc;
+  text-align: left;
+  list-style-type: none; /* Ensure no list marker */
+  width: 90%;
+  max-width: 600px;
+}
+
+
+
+.appeal p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Button styles */
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Input and form styling */
+input[type="text"], input[type="date"], input[type="submit"] {
+  padding: 8px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  width: 90%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 600px) {
+  .appeal {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  button, input[type="text"], input[type="date"], input[type="submit"] {
+    width: 100%;
+  }
+}
